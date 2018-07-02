@@ -4,7 +4,17 @@
     <!-- <v-button>次按钮</v-button> -->
     <a-button>次按钮</a-button>
     <a-icon type="link"/>
-    <router-view/>
+    <!-- <router-view/> -->
+    <nav class="nav">
+      <router-link to="/rebbitMQ">RebbitMQ</router-link>
+      <router-link to="/KafkaTopic">Kafka-topic</router-link>
+    </nav>
+    <div class="content">
+      <router-view/>
+    </div>
+    <footer>
+      <h1>footer footer footer</h1>
+    </footer>
   </div>
 </template>
 
