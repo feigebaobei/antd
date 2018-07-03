@@ -6,23 +6,28 @@
     >
       <div class="logo" />
       <a-menu theme="dark" :defaultSelectedKeys="['1']" mode="inline">
-          <a-menu-item key="1">
-        <router-link to="/rebbitMQ">
+        <a-menu-item key="1">
+          <router-link to="rebbitMQ">
             <a-icon type="pie-chart" />
-            <span>Option 1</span>
-        </router-link>
-          </a-menu-item>
-          <a-menu-item key="2">
-        <router-link to="/KafkaTopic">
+            <span>rebbitMQ</span>
+          </router-link>
+        </a-menu-item>
+        <a-menu-item key="2">
+          <router-link to="kafkaTopic">
             <a-icon type="desktop" />
-            <span>Option 2</span>
-        </router-link>
-          </a-menu-item>
+            <span>kafkaTopic</span>
+          </router-link>
+        </a-menu-item>
+        <a-menu-item key="3">
+          <router-link to="kafkaCluster">
+            <a-icon type="desktop" />
+            <span>kafkaCluster</span>
+          </router-link>
+        </a-menu-item>
         <a-sub-menu
           key="sub1"
         >
           <span slot="title"><a-icon type="user" /><span>User</span></span>
-          <a-menu-item key="3">Tom</a-menu-item>
           <a-menu-item key="4">Bill</a-menu-item>
           <a-menu-item key="5">Alex</a-menu-item>
         </a-sub-menu>
